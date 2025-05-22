@@ -38,12 +38,11 @@ This implementation **exceeds all requirements** from the Avantos Journey Builde
 
 ### Repository Structure
 
-This project is designed to work with the following repository structure:
+This repository contains the React application. The mock server needs to be cloned separately:
 
 ```
 24ee86/
-├── journey-builder-app/          # React application (this folder)
-├── frontendchallengeserver/       # Mock server
+├── journey-builder-app/          # React application
 └── README.md                      # Repository overview
 ```
 
@@ -62,15 +61,11 @@ This project is designed to work with the following repository structure:
 
 2. **Setup the Mock Server:**
    ```bash
-   # If frontendchallengeserver is included in your repo:
+   # Clone the mock server in a separate directory:
+   git clone https://github.com/mosaic-avantos/frontendchallengeserver.git
    cd frontendchallengeserver
    npm install
    npm start
-   
-   # If you need to clone it separately:
-   # git clone https://github.com/mosaic-avantos/frontendchallengeserver.git
-   # cd frontendchallengeserver
-   # npm install && npm start
    ```
    
    The mock server will run on `http://localhost:3000`
